@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"editor.insertSpaces": false,
+	// When enabled, will trim trailing whitespace when you save a file.
+	"files.trimTrailingWhitespace": true,
+	"files.autoSave": "afterDelay",
+	"files.defaultLanguage": "powershell",
+	"powershell.codeFormatting.openBraceOnSameLine": true,
+	"powershell.codeFormatting.newLineAfterOpenBrace": true,
+	"powershell.codeFormatting.newLineAfterCloseBrace": true,
+
+	// Use a custom PowerShell Script Analyzer settings file for this workspace.
+	// Relative paths for this setting are always relative to the workspace root dir.
+	"powershell.scriptAnalysis.settingsPath": "ScriptAnalyzerSettings.psd1"
+}
