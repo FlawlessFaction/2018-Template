@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Item" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>Config</name>
+    <id>218ad4e0-3ced-4a43-ad35-0b9252b68e63</id>
+    <version>0.2</version>
+    <title>Config file template</title>
+    <description>UCS Config file Template</description>
+    <author></author>
+    <tags>Config</tags>
+  </metadata>
+  <parameters>
+    <parameter name="ModuleName"  type="text" prompt="Module Name"/>
+  </parameters>
+  <content>
+      <templateFile source=".vscode/settings.json" destination="" />
+      <templateFile source="ScriptAnalyzerSettings.psd1" destination=""/>
+      <templateFile source="build.psake.ps1" destination=""/>
+      <templateFile source="build.settings.ps1" destination=""/>
+      <file source='' destination='docs'/>
+      <file source='' destination='Module\Functions'/>
+      <newModuleManifest destination='Module\Functions\${PLASTER_PARAM_ModuleName}.psd1' moduleVersion='0.1' rootModule='${PLASTER_PARAM_ModuleName}.psm1' author='FlawlessFaction' description='' encoding='UTF8-NoBOM'/>
+      <file source='' destination='tests'/>
+  </content>
+</plasterManifest>
