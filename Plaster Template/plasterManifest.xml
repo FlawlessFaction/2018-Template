@@ -21,7 +21,7 @@
       <templateFile source="build.settings.ps1" destination=""/>
       <file source='' destination='docs'/>
       <file source='' destination='Module\Functions'/>
-      <newModuleManifest destination='Module\Functions\${PLASTER_PARAM_ModuleName}.psd1' moduleVersion='0.1' rootModule='${PLASTER_PARAM_ModuleName}.psm1' author='FlawlessFaction' description='' encoding='UTF8-NoBOM'/>
+      <newModuleManifest destination='Module\${PLASTER_PARAM_ModuleName}.psd1' moduleVersion='0.1' rootModule='${PLASTER_PARAM_ModuleName}.psm1' author='FlawlessFaction' description='' encoding='UTF8-NoBOM'/>
       <file source='' destination='tests'/>
   </content>
 </plasterManifest>
